@@ -1,0 +1,14 @@
+#!/bin/bash
+# install ncnn on your raspberry pi
+
+cd ~
+
+sudo mkdir /usr/local/include/ncnn
+sudo cp -r ~/ncnn_raspberry/ncnn/* /usr/local/include/ncnn/
+
+sudo mkdir /usr/local/lib/ncnn
+sudo cp ~/ncnn_raspberry/libncnn.a /usr/local/lib/ncnn/libncnn.a
+
+sudo rm -r ~/ncnn_raspberry
+
+
